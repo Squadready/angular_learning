@@ -11,7 +11,9 @@
       <small>{{post.date | date:"medium":null:"ru"}}</small>
     </div>
 
-    <quill-view-html [content]="post.text"></quill-view-html>
+    <div class="quill-wrapper">
+      <quill-view-html [content]="post.text"></quill-view-html>
+    </div>
   </div>
 </div>
 <ng-template #loading>
